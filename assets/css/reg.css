@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Noto+Serif+Telugu:wght@300&family=Rajdhani:wght@400;500;600&family=Roboto:wght@300;400;500&family=Saira+Semi+Condensed:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+span{
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*=================== REUSABLE VARIABLES ===================*/
+.btn-primary{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: rgb(52, 120, 246);
+}
+input{
+    border: none;
+    outline: none;
+    background-color: none;
+} 
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    padding: .5rem 1rem;
+    width: 200px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+button:focus{
+    border: unset;
+    background: unset;
+    outline: unset;
+}
+
+.f-weight{
+    font-weight: 600;
+    color: #000;
+}
+.line{
+    height: 100%;
+    width: 2px;
+    background-color: rgb(106, 106, 106);
+    margin: 0 .5rem;
+}
+.d-flex{
+    display: flex;
+}
+.dot-border{
+    border: 1px dashed #000;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bg-gray:hover{
+    background-color: #b1b1b18f;
+}
+.btn-border{
+    border: 2px solid #000;
+    transition: .5s ease-in-out;
+}
+.left-line,
+.right-line{
+    width: 200px;
+    height: 1px;
+    background-color: rgb(220, 220, 220);
+}
+.p-3{
+    padding: .2rem .9rem;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.nav-toggle,
+.nav-close{
+    cursor: pointer;
+}
+.btn-dark:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/*=================== HEADER AND NAVBAR ===================*/
+.container{
+    width: 100%;
+    padding: 0 3rem;
+}
+.header{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav__logo img{
+    width: 100px;
+    z-index: 100;
+}
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.en-box {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+}
+.en-box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.main{
+    height: 90vh;
+}
+
+/*=================== HOME SECTION ===================*/
+.sign-form{
+    width: 20%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-header{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.input-box{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.input-box label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+}
+.input-box input{
+    width: 100%;
+    padding: .8rem;
+    border-radius: 20px;
+    background-color: #d4d4d48f;
+    cursor: pointer;
+}
+input[type='email']{
+    font-weight: bold;
+}
+.forget-box{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+}
+.forget-box span{
+    text-decoration: underline;
+    color: rgb(109, 109, 109);
+    cursor: pointer;
+    font-weight: 500;
+}
+.or-line{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.or-line span{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/*=================== FOOTER SECTION ===================*/
+footer{
+    height: 3rem;
+    text-align: center;
+}
+.footer-label span{
+    color: #000;
+    font-family: 'Roboto';
+    font-size: .8rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+/*=================== WEBKIT TRACK ===================*/
+::-webkit-scrollbar{
+    background-color: rgb(213, 213, 213);
+    width: .3rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(182, 182, 182);
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(251, 250, 247);
+    width: .5rem;
+}
+
+/*=================== NAV SECTION ===================*/
+.en-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(233, 233, 233, 0.186);
+    backdrop-filter: blur(2px);
+}
+.en-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    cursor: pointer;
+}
+.en-open{
+    right: 0;
+}
+.en-close{
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+    font-weight: bold;
+}
+.en-close i{
+    font-size: 1.2rem;
+}
+
+.en-title{
+    margin-bottom: 1rem;
+}
+.en-group-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.en-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    height: 70vh;
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 5rem 2rem 0 2rem;
+
+}
+.en-close-left{
+    position: absolute;
+    top: -1rem;
+    left: 2.5rem;
+}
+.en-close-left img{
+    width: 100px;
+    height: auto;
+}
+
+
+/*=================== MEDIA QUARIES SECTION ===================*/
+@media screen and (max-width: 991px){
+    .en-list{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .en-group-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .en-close-left img{
+        display: none;
+    }
+    ul{
+        overflow: scroll;
+        /* // Again, this is where the magic happens */
+        -webkit-overflow-scrolling: touch;
+    }
+    .sign-form{
+        width: 60%;
+    }
+}

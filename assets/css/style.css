@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Noto+Serif+Telugu:wght@300&family=Rajdhani:wght@400;500;600&family=Roboto:wght@300;400;500&family=Saira+Semi+Condensed:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    padding: .6rem 1rem;
+    width: 200px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:focus{
+    border: unset;
+    background: unset;
+    outline: unset;
+}
+.navbar-toggler:focus{
+    border: unset;
+    background: unset;
+    outline: unset;
+}
+.f-weight{
+    font-weight: 600;
+    color: #000;
+}
+.d-flex{
+    display: flex;
+}
+.bg-gray:hover{
+    background-color: #b1b1b18f;
+    border-radius: 3px;
+}
+.p-3{
+    padding: .2rem .9rem;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.bg-dark{
+    background: #000000a4;
+    color: #fff;
+}
+.bg-light{
+    background: #f4f4f4c0;
+    margin-left: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 1rem;
+}
+
+.nav-toggle,
+.nav-close{
+    cursor: pointer;
+}
+
+/*============== HEADER AND HAVBAR =============*/
+.container{
+    max-width: 1500px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+.header{
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
+}
+.nav-second-list{
+    width: 20%;
+    margin-left: auto;
+    background-color: #fff;
+    padding: 6rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.nav-close{
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+}
+
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo img{
+    width: 100px;
+}
+.nav-menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.366);
+    backdrop-filter: blur(6px);
+    z-index: 100000;
+}
+
+.menu-open{
+    right: 0;
+}
+
+.ac-btn{
+    margin: 0 1rem;
+}
+.nav-second-list li{
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: .2rem;
+}
+.nav-second-list li:hover{
+    background-color: #d8d8d88f;
+}
+
+/*=================== HOME SECTION ===================*/
+.swiper-wrapper{
+    height: 100vh;
+}
+.home-bg{
+    background-image: url('../images/first-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-bg-one{
+    background-image: url('../images/second-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-bg-two{
+    background-image: url('../images/third-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-bg-three{
+    background-image: url('../images/forth-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-bg-four{
+    background-image: url('../images/fifth-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-bg-five{
+    background-image: url('../images/sixth-banner.webp');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home-bg-six{
+    background-image: url('../images/last-banner.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 18rem;
+    text-align: center;
+}
+.home-top{
+    text-align: center;
+}
+.bat-btm{
+    z-index: -1;
+}
+.home-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 4rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+.home-top p span{
+    text-decoration: underline;
+}
+.home-scroll i{
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+    animation: float 1s ease infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+/*=================== FOOTER SECTION ===================*/
+footer{
+    height: 3rem;
+    text-align: center;
+}
+.footer-label span{
+    color: #000;
+    font-family: 'Roboto';
+    font-size: .8rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.scroll-top .scroll-up{
+    display: block;
+}
+/*============== HEADER AND HAVBAR =============*/
+.scroll-up{
+    background-color: rgb(3, 3, 3);
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    animation: scroll 1s ease infinite;
+    display: none;
+}
+.scroll-up i{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*=================== WEBKIT TRACK ===================*/
+::-webkit-scrollbar{
+    background-color: rgb(213, 213, 213);
+    width: .3rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(182, 182, 182);
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(251, 250, 247);
+    width: .5rem;
+}
+
+/*=================== MEDIA QUERIES ===================*/
+@media screen and (max-width: 991px){
+    .container{
+        margin: 0 auto;
+    }
+    .nav__first-menu{
+        display: none;
+    }
+    .nav__logo-img{
+        padding-left: 0.6rem;
+    }
+    .nav-account{
+        display: none;
+    }
+    .bg-light{
+        margin-left: 0;
+    }
+    .nav-second-list{
+        width: 66%;
+
+    }
+    ul{
+        overflow: scroll;
+        /* // Again, this is where the magic happens */
+        -webkit-overflow-scrolling: touch;
+    }
+    .home-scroll{
+        display: none;
+    }
+}
+@media screen and (max-width: 370px){
+    .home-content{
+        padding-top: 25%;
+    }  
+}
+@media screen and (min-width: 576px){
+  
+}
+@media screen and (max-width: 767px){
+    .shop-data{
+        flex-direction: column;
+    }   
+    .home-bottom{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
